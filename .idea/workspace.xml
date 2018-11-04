@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f80f19-a4c9-4351-972f-4978fd67622e" name="Default" comment="" />
+    <list default="true" id="97f80f19-a4c9-4351-972f-4978fd67622e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/areas/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/carts/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/contents/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/goods/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/oauth/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/orders/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/pay/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/users/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/apps/verifications/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/libs/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/logs/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/mall/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/mall/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/mall/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/mall/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/script/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/utils/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/meiduo.iml" afterPath="$PROJECT_DIR$/.idea/meiduo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +90,13 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -27,6 +111,9 @@
     <option name="y" value="24" />
     <option name="width" value="1140" />
     <option name="height" value="835" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -63,8 +150,219 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="meiduo" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meiduo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -80,10 +378,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1140" height="835" extended-state="7" />
+    <frame x="65" y="24" width="1140" height="835" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28142077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5140187" sideWeight="0.5035318" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
