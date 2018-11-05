@@ -32,6 +32,7 @@ from rest_framework.views import APIView
 """
 
 class RegisterUsernameCountView(APIView):
+
     def get(self,request,username):
 
         # 2.后端接收用户名
@@ -42,4 +43,4 @@ class RegisterUsernameCountView(APIView):
         count = User.objects.filter(username=username).count()
 
         # 4 返回响应
-        return Response({'count':count})
+        return Response({'count':count,'username':username})
