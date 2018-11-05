@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f80f19-a4c9-4351-972f-4978fd67622e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/libs/yuntongxun/CCPRestSDK.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/libs/yuntongxun/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/libs/yuntongxun/sms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/libs/yuntongxun/xmltojson.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/celery_tasks/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/celery_tasks/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/celery_tasks/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/celery_tasks/sms/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mall/celery_tasks/sms/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/js/register.js" afterPath="$PROJECT_DIR$/front/js/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/register.html" afterPath="$PROJECT_DIR$/front/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mall/apps/verifications/views.py" afterPath="$PROJECT_DIR$/mall/apps/verifications/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/meiduo$views.coverage" NAME="views Coverage Results" MODIFIED="1541410684069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/verifications" />
-    <SUITE FILE_PATH="coverage/meiduo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541416327192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall" />
+    <SUITE FILE_PATH="coverage/meiduo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541421117773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -28,14 +27,68 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mall/apps/verifications/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="278">
+              <caret line="90" column="43" lean-forward="false" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/celery_tasks/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/celery_tasks/sms/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <element signature="e#160#195#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/celery_tasks/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+              <folding>
+                <element signature="e#65#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/celery_tasks/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,44 +103,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="56" column="99" lean-forward="false" selection-start-line="56" selection-start-column="99" selection-end-line="56" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall/apps/verifications/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="948">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -117,10 +140,14 @@
         <option value="$PROJECT_DIR$/mall/mall/urls.py" />
         <option value="$PROJECT_DIR$/mall/apps/verifications/urls.py" />
         <option value="$PROJECT_DIR$/mall/apps/verifications/serializers.py" />
-        <option value="$PROJECT_DIR$/mall/apps/verifications/views.py" />
         <option value="$PROJECT_DIR$/front/register.html" />
         <option value="$PROJECT_DIR$/front/js/register.js" />
         <option value="$PROJECT_DIR$/mall/libs/yuntongxun/sms.py" />
+        <option value="$PROJECT_DIR$/mall/celery_tasks/__init__.py" />
+        <option value="$PROJECT_DIR$/mall/celery_tasks/config.py" />
+        <option value="$PROJECT_DIR$/mall/celery_tasks/sms/tasks.py" />
+        <option value="$PROJECT_DIR$/mall/celery_tasks/main.py" />
+        <option value="$PROJECT_DIR$/mall/apps/verifications/views.py" />
       </list>
     </option>
   </component>
@@ -139,8 +166,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1046" />
-    <option name="height" value="855" />
+    <option name="width" value="1205" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -200,7 +227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="celery_tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,11 +245,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="celery_tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yuntongxun" />
+              <option name="myItemId" value="sms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,14 +609,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541411290538</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="短信的发送">
+      <created>1541416421640</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541416421640</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1046" height="855" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1205" height="859" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1177988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5140187" sideWeight="0.5035318" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -597,9 +631,9 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14081997" sideWeight="0.49646822" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32853404" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27894738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6230366" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -626,26 +660,15 @@
     <MESSAGE value="获取图片验证码" />
     <MESSAGE value="图片验证码前端显示" />
     <MESSAGE value="短信验证码中 序列化器的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="短信验证码中 序列化器的代码" />
+    <MESSAGE value="短信的发送" />
+    <option name="LAST_COMMIT_MESSAGE" value="短信的发送" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mall/apps/verifications/serializers.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mall/apps/verifications/views.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -741,14 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -921,50 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/apps/verifications/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/apps/verifications/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/libs/yuntongxun/CCPRestSDK.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall/libs/yuntongxun/sms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -978,6 +949,94 @@
         <state relative-caret-position="1344">
           <caret line="56" column="99" lean-forward="false" selection-start-line="56" selection-start-column="99" selection-end-line="56" selection-end-column="99" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/apps/verifications/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="948">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/libs/yuntongxun/CCPRestSDK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/celery_tasks/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/celery_tasks/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/celery_tasks/sms/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#160#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/celery_tasks/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding>
+            <element signature="e#65#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/apps/verifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="90" column="43" lean-forward="false" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
