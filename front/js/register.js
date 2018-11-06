@@ -20,6 +20,7 @@ var vm = new Vue({
 		image_code_id: '',  // 图片验证码编号
 		image_code_url: '',  // 验证码图片路径
 		sending_flag: false,
+		error_phone_message: '您输入的手机号格式不正确',
 		sms_code_tip: '获取短信验证码',
 		error_image_code_message: '请填写图片验证码',
 		error_sms_code_message: '请填写短信验证码',
@@ -101,6 +102,22 @@ var vm = new Vue({
 			} else {
 				this.error_phone = true;
 			}
+			if (this.error_phone == false) {
+                axios.get('http://127.0.0.1:8000'+'/users/phones/'+ this.mobile + '/count/', {
+                        responseType: 'json'
+                    })
+                    .then(response => {
+                        if (response.data.count > 0) {
+                            this.error_phone_message = '手机号已存在';
+                            this.error_phone = true;
+                        } else {
+                            this.error_phone = false;
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error.response.data);
+                    })
+            }
 		},
 		check_image_code: function (){
 			if(!this.image_code) {

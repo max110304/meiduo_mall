@@ -45,6 +45,23 @@ class RegisterUsernameCountView(APIView):
         # 4 返回响应
         return Response({'count':count,'username':username})
 
+"""
+1.前端发送一个ajax请求,给后端,参数是 手机号
+# 2.后端接收手机号
+# 3.查询校验是否重复
+# 4.返回响应
+
+"""
+class RegisterPhoneCountView(APIView):
+
+    def get(self,request,mobile):
+
+        # 查询校验是否重复
+        count = User.objects.filter(mobile=mobile).count()
+
+        # 返回响应
+        return Response({'count':count,'moblie':mobile})
+
 
 """
 前段应该 将6个参数(username,password,password2,mobile,sms_code,allow) 传递给后端
@@ -58,6 +75,8 @@ POST        users/
 
 
 """
+
+
 # APIView
 # GenericAPIView                    列表,详情通用支持,一般和mixin配合使用
 # CreateAPIView
@@ -84,3 +103,4 @@ class RegisterCreateUserView(APIView):
         serializer.save()
         # 4 返回响应
         return  Response(serializer.data)
+
