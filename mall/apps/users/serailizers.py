@@ -13,14 +13,36 @@ class RegisterCreateUserSerializer(serializers.ModelSerializer):
     6个参数(username,password,password2,mobile,sms_code,allow)
 
     """
-    sms_code = serializers.CharField(label='短信验证码',min_length=6,max_length=6,required=True)
-    password2 = serializers.CharField(label='确认密码',required=True)
-    allow = serializers.CharField(label='同意协议',required=True)
+
+    # read_only 只读取 不写入 write_only 只写 不读
+    # user 模型中没有对应的属性 这个字段  我们只能 传入， 不能读取
+    sms_code = serializers.CharField(label='短信验证码',min_length=6,max_length=6,write_only=True)
+    password2 = serializers.CharField(label='确认密码',write_only=True)
+    allow = serializers.CharField(label='同意协议',write_only=True)
     class Meta:
         model = User
         fields = ['username','password','mobile','sms_code','password2','allow']
 
-
+        extra_kwargs = {
+            # 'id': {'read_only': True},
+            'username': {
+                'min_length': 5,
+                'max_length': 20,
+                'error_messages': {
+                    'min_length': '仅允许5-20个字符的用户名',
+                    'max_length': '仅允许5-20个字符的用户名',
+                }
+            },
+            'password': {
+                'write_only': True,
+                'min_length': 8,
+                'max_length': 20,
+                'error_messages': {
+                    'min_length': '仅允许8-20个字符的密码',
+                    'max_length': '仅允许8-20个字符的密码',
+                }
+            }
+        }
 
     #  1 手机号校验，密码一致，短信校验，是否同意
     #     手机号 就是规则 单个字段
@@ -61,3 +83,20 @@ class RegisterCreateUserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('验证码错误')
 
         return attrs
+
+    def create(self, validated_data):
+        # 调用create的时候 {'password2': '1234567890', 'mobile': '18310820688', 'username': 'itcast', 'password': '1234567890', 'sms_code': '081702', 'allow': 'true'}
+        # 多了字段
+        #  User.objects.create(**validated_data)
+        # 删除多余字段
+        del validated_data['password2']
+        del validated_data['sms_code']
+        del validated_data['allow']
+
+        user = User.objects.create(**validated_data)
+
+        # 对密码进行加密
+        user.set_password(validated_data['password'])
+        user.save()
+
+        return user

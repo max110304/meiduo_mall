@@ -102,5 +102,7 @@ class RegisterCreateUserView(APIView):
         # 3 数据入库
         serializer.save()
         # 4 返回响应
-        return  Response(serializer.data)
+        # user --> 字典   需要使用序列化器
+        # serializer.data 将模型转换为字典的过程
+        return Response(serializer.data)
 
