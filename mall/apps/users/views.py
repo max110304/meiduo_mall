@@ -115,6 +115,6 @@ class RegisterCreateUserView(APIView):
 
 1 如何生成token
 2 在哪里返回
-3
+
 """
 

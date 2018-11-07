@@ -247,3 +247,7 @@ JWT_AUTH = {
 
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
 }
+
+# AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+AUTHENTICATION_BACKENDS = ['utils.users.MobileUsernameModelBackend']
+# AUTHENTICATION_BACKENDS = ['utils.users.SettingsBackend']

@@ -69,9 +69,9 @@ var vm = new Vue({
                         // 跳转页面
                         var return_url = this.get_query_string('next');
                         if (!return_url) {
-                            // return_url = '/index.html';
+                            return_url = '/index.html';
                         }
-                        // location.href = return_url;
+                        location.href = return_url;
                     })
                     .catch(error => {
                         this.error_pwd_message = '用户名或密码错误';
