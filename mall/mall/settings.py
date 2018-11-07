@@ -222,6 +222,13 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exception.exception_handler',
+
+    # 修改认证的顺序， 让JWT 认证在第一位， 优先采用JWT认证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
 }
 
 # 我们定义好了我们自己的用户模型,需要替换,
@@ -229,3 +236,14 @@ REST_FRAMEWORK = {
 # 语法形式为: 子应用.模型类
 # 注意点: 只能有一个 .
 AUTH_USER_MODEL = 'users.User'
+import datetime
+JWT_AUTH = {
+
+    # 自定义返回数据的方法 token
+    'JWT_RESPONSE_PAYLOAD_HANDLER':
+    'utils.users.jwt_response_payload_handler',
+
+    # token 有效期
+
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+}
