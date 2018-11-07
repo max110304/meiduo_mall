@@ -49,3 +49,33 @@ class MobileUsernameModelBackend(ModelBackend):
         if user is not None and user.check_password(password):
             return user
         return None
+
+class SettingsBackend(object):
+    """
+    Authenticate against the settings ADMIN_LOGIN and ADMIN_PASSWORD.
+
+    Use the login name and a hash of the password. For example:
+
+    ADMIN_LOGIN = 'admin'
+    ADMIN_PASSWORD = 'pbkdf2_sha256$30000$Vo0VlMnkR4Bk$qEvtdyZRWTcOsCnI/oQ7fVOu1XAURIZYoOZ3iq8Dr4M='
+    """
+
+    def authenticate(self, request, username=None, password=None):
+        try:
+            if re.match('1[3-9]\d{9}', username):
+                # 手机号
+                user = User.objects.get(mobile=username)
+            else:
+                # 用户名
+                user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            return None
+        #2. 校验用户的密码
+        if user.check_password(password):
+            return user
+
+    def get_user(self, user_id):
+        try:
+            return User.objects.get(pk=user_id)
+        except User.DoesNotExist:
+            return None
