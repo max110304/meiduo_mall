@@ -94,7 +94,7 @@ class SettingsBackend(object):
         #     return None
 
         user = get_user(username)
-        
+
         #2. 校验用户的密码
         if user is not None and user.check_password(password):
             return user

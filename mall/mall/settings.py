@@ -55,8 +55,11 @@ INSTALLED_APPS = [
     # 'apps.users.apps.UserConfig'
     # 因为我们设置了 apps路径,所以系统知道区哪里找,我们就不用写 apps
     'users.apps.UsersConfig',
+    # 安装框架
     'rest_framework',
+    # 安装cors
     'corsheaders',
+    'oauth.apps.OauthConfig',
 ]
 
 MIDDLEWARE = [
@@ -251,3 +254,8 @@ JWT_AUTH = {
 # AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
 # AUTHENTICATION_BACKENDS = ['utils.users.MobileUsernameModelBackend']
 AUTHENTICATION_BACKENDS = ['utils.users.SettingsBackend']
+
+# QQ登录参数
+QQ_CLIENT_ID = '101474184' # appid
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'   # app sceret_key
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
