@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework.response import Response
 
+
 """
  1. 获取code
  2. 通过code 换取 token
@@ -51,9 +52,9 @@ GET     /oauth/qq/users/?code=xxx
 
 """
 from rest_framework import status
-from QQLoginTool.QQtool import OAuthQQ
-from django.conf import settings
-from mall import settings
+from .models import OAuthQQUser
+
+
 class OauthQQUserView(APIView):
 
     def get(self,request):
@@ -68,5 +69,27 @@ class OauthQQUserView(APIView):
         # 2.有了token,就可以换取 oepnid
         openid = oauth.get_open_id(access_token)
 
+        # 3 我们需要openid 来进行判断
+        # 如果数据库中 有openid 则表明用户已经绑定过
+        # 如果数据库中 没有openid 则表明用户没有绑定
+        try:
+            qquser = OAuthQQUser.objects.get(openid=openid)
+        except OAuthQQUser.DoesNotExist:
+            # 说明没有绑定过
+            return Response({'openid':openid})
+        else:
+            # 说明存在, 用户已经绑定过来了,绑定过应该登录
+            # 既然是登录,则应该返回token
+            # 没有异常 走 else
+            from rest_framework_jwt.settings import api_settings
 
-        pass
+            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+            payload = jwt_payload_handler(qquser.user)
+            token = jwt_encode_handler(payload)
+
+            return Response({
+                "userid":qquser.id,
+                "username":qquser.username,
+                "token":token
+            })

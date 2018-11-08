@@ -108,7 +108,6 @@ class RegisterCreateUserSerializer(serializers.ModelSerializer):
 
         # 获取jwt的俩个方法
         jwt_payloda_handler =api_settings.JWT_PAYLOAD_HANDLER
-
         jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
         # payload 可以装载数据（用户数据）
