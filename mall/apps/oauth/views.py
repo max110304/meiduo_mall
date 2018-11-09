@@ -26,7 +26,7 @@ from django.conf import settings
 class OauthQQURLView(APIView):
 
     def get(self,request):
-        state = 'test'
+        state = '/'
 
         # 1 创建 oauth对象
         #client_id=None, client_secret=None, redirect_uri=None, state=None
@@ -100,8 +100,8 @@ class OauthQQUserView(APIView):
             token = jwt_encode_handler(payload)
 
             return Response({
-                "userid":qquser.id,
-                "username":qquser.username,
+                "user_id":qquser.id,
+                "username":qquser.user.username,
                 "token":token
             })
 
@@ -139,8 +139,23 @@ class OauthQQUserView(APIView):
         qquser = serializer.save()
 
         # 4 返回响应
-        return Response()
-        pass
+        from rest_framework_jwt.settings import api_settings
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(qquser.user)
+        token = jwt_encode_handler(payload)
+
+        return Response({
+            "user_id": qquser.id,
+            "username": qquser.user.username,
+            "token": token
+        })
+
+
+
+
+
 
 # 加密签名
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer,BadSignature,SignatureExpired

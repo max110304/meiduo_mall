@@ -5,7 +5,7 @@ def generic_access_token(openid):
     # 生成序列器
     serializer = Serializer(settings.SECRET_KEY,3600)
     # 对敏感数据进行校验
-    token = serializer.dumps({'openid':'openid'})
+    token = serializer.dumps({'openid':openid})
     # 返回数据
     return token.decode()
 
